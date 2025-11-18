@@ -1,5 +1,5 @@
-import { LazyAppPdfViewer } from "~/components/LazyAppPdfViewer";
 import type { Route } from "./+types/home";
+import AppPdfViewer from "~/components/AppPdfViewer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,14 +11,16 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   const pdfSrc =
     "https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf";
+
+    if(!window) return;
   return (
     <div className="container">
       <h1>RP Starter Toolkit: React Router + TypeScript</h1>
       <br />
       <h2>Default Toolbar</h2>
-      <LazyAppPdfViewer pdfSrc={pdfSrc} />
+      <AppPdfViewer pdfSrc={pdfSrc} />
       <h2>Without Toolbar</h2>
-      <LazyAppPdfViewer
+      <AppPdfViewer
         pdfSrc={pdfSrc}
         showToolbar={false}
         defaultLayoutProps={{
@@ -26,7 +28,7 @@ export default function Home() {
         }}
       />
       <h2>Mobile</h2>
-      <LazyAppPdfViewer
+      <AppPdfViewer
         pdfSrc={pdfSrc}
         defaultLayoutProps={{
           style: { width: "500px" },
