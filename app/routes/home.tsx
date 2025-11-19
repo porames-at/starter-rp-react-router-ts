@@ -12,7 +12,6 @@ export default function Home() {
   const pdfSrc =
     "https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf";
 
-    if(!window) return;
   return (
     <div className="container">
       <h1>RP Starter Toolkit: React Router + TypeScript</h1>
