@@ -1,7 +1,7 @@
 # React PDF Starter Toolkit in React Router and TypeScript
 
 
-[![Open example in codesandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)]()
+[![Open example in codesandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/react-pdf-dev/starter-rp-react-router-ts/main)
 
 Welcome to the React PDF Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with React Router and TypeScript. It showcases how React PDF can be integrated and rendered as part of a React.js project.
 
